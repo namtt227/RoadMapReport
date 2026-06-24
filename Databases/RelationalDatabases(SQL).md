@@ -146,7 +146,7 @@ COMMIT;
 
 ### 2.6 Indexing (Chỉ mục)
 
-Index giúp tăng tốc độ truy vấn bằng cách tạo cấu trúc tra cứu nhanh, tương tự mục lục của sách.
+Index giúp tăng tốc độ truy vấn bằng cách tạo cấu trúc tra cứu nhanh, tương tự mục lục của sách thường dùng để tối ưu truy vấn 
 
 ```sql
 -- Tạo index đơn
@@ -173,11 +173,11 @@ DROP INDEX idx_users_email;
 - Bảng có lượng dữ liệu lớn (hàng chục nghìn bản ghi trở lên)
 - Cột có tính phân biệt cao (nhiều giá trị khác nhau)
 
-**Lưu ý:** Index tăng tốc đọc nhưng làm chậm ghi (`INSERT`, `UPDATE`, `DELETE`) vì cần cập nhật cả index.
+Index tăng tốc đọc nhưng làm chậm ghi (`INSERT`, `UPDATE`, `DELETE`) vì cần cập nhật cả index.
 
 ---
 
-## 3. Hệ Quản Trị Cơ Sở Dữ Liệu (Systems)
+## 3. Systems
 
 ### 3.1 PostgreSQL
 
@@ -294,4 +294,10 @@ Database: default
 Username: default
 Password: ********
 ```
+## 5. Thực hành và ví dụ:
+VD: Thử tìm các sản phẩm có id = 2; 
+![alt text](photo/image.png)
 
+Khớp với dữ liệu khi gọi API
+
+![alt text](photo/image-1.png)
