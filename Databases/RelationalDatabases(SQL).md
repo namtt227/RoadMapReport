@@ -6,6 +6,30 @@
 
 **Relational Databases** (Cơ sở dữ liệu quan hệ) là hệ thống lưu trữ dữ liệu theo dạng bảng (table) có cấu trúc, với các mối quan hệ rõ ràng giữa các bảng. SQL (Structured Query Language) là ngôn ngữ chuẩn để truy vấn và thao tác dữ liệu trong các hệ thống này.
 
+---
+### Đặc điểm 
+Có schema cố định — phải định nghĩa cấu trúc trước khi lưu dữ liệu
+Đảm bảo tính toàn vẹn dữ liệu qua ACID (Atomicity, Consistency, Isolation, Durability)
+Hỗ trợ quan hệ giữa các bảng thông qua khóa ngoại (Foreign Key)
+Tối ưu cho các thao tác đọc/ghi theo hàng (row-based), phù hợp với OLTP
+
+### Ứng dụng
+**SQL theo hàng (Row-based) — PostgreSQL**
+
+Ứng dụng giao dịch (banking, e-commerce, ERP)
+Quản lý người dùng, phân quyền, hồ sơ
+Hệ thống đặt hàng, quản lý kho hàng
+CMS, blog, quản lý nội dung
+Tool: DBeaver, pgAdmin
+
+
+**SQL theo cột (Columnar) — ClickHouse**
+
+Phân tích dữ liệu lớn (Data Warehouse, OLAP)
+Dashboard real-time, báo cáo tổng hợp
+Log analytics, theo dõi sự kiện người dùng
+Hệ thống monitoring, telemetry
+Tool: DBeaver, ClickHouse Play (web UI)
 
 ---
 
